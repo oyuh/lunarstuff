@@ -1,0 +1,21 @@
+name: lunarstuff
+version: '1.0'
+main: dev.lawson.lunarstuff.Lunarstuff
+api-version: '1.21'
+prefix: lunarstuff
+load: STARTUP
+authors: [ Lawson Hart ]
+description: yayyyy
+permissions:
+  apollo.staff:
+    description: "Permission to use Apollo staff mods (XRAY)"
+    default: op
+commands:
+  staffmode:
+    description: "Toggle staff XRAY mode on/off."
+    usage: "/staffmode"
+    permission: apollo.staff
+  limb:
+    description: Manage player limbs
+    usage: /<command> <take|put|list> <player> <limb>
+    permission: lunarstuff.limb

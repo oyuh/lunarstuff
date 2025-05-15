@@ -1,0 +1,12 @@
+dev\lawson\lunarstuff\managers\TeamManager$TeamGroup.class
+dev\lawson\lunarstuff\managers\StaffManager.class
+dev\lawson\lunarstuff\managers\RichPresenceManager.class
+dev\lawson\lunarstuff\managers\NametagManager.class
+dev\lawson\lunarstuff\managers\LimbManager.class
+dev\lawson\lunarstuff\commands\StaffModeCommand.class
+dev\lawson\lunarstuff\managers\TeamManager$1.class
+dev\lawson\lunarstuff\listeners\LimbListener.class
+dev\lawson\lunarstuff\managers\TeamManager.class
+dev\lawson\lunarstuff\managers\LunarClientCheckManager.class
+dev\lawson\lunarstuff\commands\LimbCommand.class
+dev\lawson\lunarstuff\Lunarstuff.class

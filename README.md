@@ -58,7 +58,7 @@ richpresence:
 ## Building from Source
 
 ```bash
-git clone https://github.com/yourusername/lunarstuff.git
+git clone https://github.com/oyuh/lunarstuff.git
 cd lunarstuff
 mvn clean package
 ```

@@ -16,6 +16,7 @@ A Minecraft plugin that enhances server functionality for Lunar Client users thr
 |---------|-------------|------------|
 | `/staffmode` | Toggle XRAY vision mode | `apollo.staff` |
 | `/limb <take\|put\|list> <player> [limb]` | Manage player limb visibility | `lunarstuff.limb` |
+| `/refreshteam` | Refreshes all teams | `lunarstuff.refreshteam` |
 
 ## Configuration
 

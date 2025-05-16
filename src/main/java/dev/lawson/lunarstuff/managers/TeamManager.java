@@ -32,7 +32,12 @@ public class TeamManager implements Listener {
 
     public TeamManager(Lunarstuff plugin) {
         this.teamModule = Apollo.getModuleManager().getModule(TeamModule.class);
-        // Start the periodic task to update team members' locations
+        Bukkit.getScheduler().runTaskTimerAsynchronously(
+                Lunarstuff.getInstance(),
+                this::reloadAllTeams,
+                10L, // initial delay
+                10L  // repeat every 10 ticks (0.5 seconds)
+        );
         startTeamUpdateTask();
     }
 

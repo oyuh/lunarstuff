@@ -17,6 +17,7 @@ public class RichPresenceManager {
     private final long intervalTicks;
     private final String gameName, gameVariant, gameState, playerState, mapName, subServerName;
     private final boolean showTeam;
+    private final int teamMaxSize;
 
     public RichPresenceManager(Lunarstuff plugin) {
         this.plugin = plugin;
@@ -30,6 +31,7 @@ public class RichPresenceManager {
         mapName = plugin.getConfig().getString("richpresence.mapName", "");
         subServerName = plugin.getConfig().getString("richpresence.subServerName", "");
         showTeam = plugin.getConfig().getBoolean("richpresence.showTeam", true);
+        teamMaxSize = plugin.getConfig().getInt("richpresence.teamMaxSize", 5);
     }
 
     /** Starts the periodic rich presence update task (if enabled in config). */
@@ -72,8 +74,7 @@ public class RichPresenceManager {
                 Team team = Team.getTeam(player);
                 if (team != null) {
                     // current size = number of players *online* in team (or use total members if preferred)
-                    int teamSize = team.getMembers().size(); // (This assumes BetterTeams Team.getMembers() returns a list of all members)
-                    int teamMaxSize = 5;  // (Assuming BetterTeams API provides max team size config)
+                    int teamSize = team.getMembers().size(); // (This assumes BetterTeams Team.getMembers() returns a list of all members)// (Assuming BetterTeams API provides max team size config)
                     presenceBuilder.teamCurrentSize(teamSize);
                     presenceBuilder.teamMaxSize(teamMaxSize);
                 }

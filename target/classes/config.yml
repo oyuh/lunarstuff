@@ -24,3 +24,4 @@ richpresence:
   mapName: "X:%player_x% Y:%player_y% Z:%player_z%"  # Format to show coordinates
   subServerName: ""           # e.g. sub-server or map name if applicable
   showTeam: true              # Whether to show team size info in rich presence
+  teamMaxSize: 5

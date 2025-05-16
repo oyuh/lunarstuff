@@ -1,5 +1,6 @@
 dev\lawson\lunarstuff\managers\TeamManager$TeamGroup.class
 dev\lawson\lunarstuff\managers\StaffManager.class
+dev\lawson\lunarstuff\commands\RefreshTeamCommand.class
 dev\lawson\lunarstuff\managers\RichPresenceManager.class
 dev\lawson\lunarstuff\managers\NametagManager.class
 dev\lawson\lunarstuff\managers\LimbManager.class

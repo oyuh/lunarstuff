@@ -19,3 +19,7 @@ commands:
     description: Manage player limbs
     usage: /<command> <take|put|list> <player> <limb>
     permission: lunarstuff.limb
+  refreshteam:
+    description: "Refreshes all teams for all players"
+    usage: "/refreshteam"
+    permission: lunarstuff.refreshteam

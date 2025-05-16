@@ -2,6 +2,7 @@ package dev.lawson.lunarstuff;
 
 import dev.lawson.lunarstuff.commands.LimbCommand;
 import dev.lawson.lunarstuff.commands.StaffModeCommand;
+import dev.lawson.lunarstuff.commands.RefreshTeamCommand;
 import dev.lawson.lunarstuff.listeners.LimbListener;
 import dev.lawson.lunarstuff.managers.*;
 import org.bukkit.Bukkit;
@@ -47,6 +48,11 @@ public class Lunarstuff extends JavaPlugin {
             limbCmd.setTabCompleter(limbCommand);
         } else {
             getLogger().severe("Failed to register /limb command. Check plugin.yml.");
+        }
+
+        PluginCommand refreshTeamCmd = getCommand("refreshteam");
+        if (refreshTeamCmd != null) {
+            refreshTeamCmd.setExecutor(new RefreshTeamCommand(teamManager));
         }
 
         // Register event listeners

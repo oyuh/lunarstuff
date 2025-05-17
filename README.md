@@ -1,6 +1,6 @@
 # Lunarstuff - Lunar Client Apollo API Integration
 
-A Minecraft plugin that enhances server functionality for Lunar Client users through the Apollo API. This plugin adds staff utility tools, custom nametags, team management, rich presence integration, and limb visibility controls.
+A streamlined Apollo/Lunar Client plugin with ease of use and config. This plugin adds staff utility tools, custom nametags, team management, rich presence integration, and limb visibility controls.
 
 ## Features
 
@@ -65,7 +65,3 @@ mvn clean package
 ```
 
 The built JAR will be in the `target` directory.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
